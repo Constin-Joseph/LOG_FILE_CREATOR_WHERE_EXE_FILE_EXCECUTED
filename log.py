@@ -2,7 +2,7 @@ import logging
 import os
 def logerr(e):
     pat=os.getcwd()
-    pathh= os.path.join(pat, 'BMJ_log_file.log')
+    pathh= os.path.join(pat, 'log_file_name.log')
     logging.basicConfig(filename=pathh, filemode='w', format='%(name)s - %(levelname)s - %(message)s')
     logger=logging.getLogger(__name__)
     logger.error(e)
