@@ -7,5 +7,7 @@ def logerr(e):
     logger=logging.getLogger(__name__)
     logger.error(e)
     print("log file created",pathh)
+logerr(e)#call in main program
+#pass any program exception here(i.e)except exception as e:
 
 
